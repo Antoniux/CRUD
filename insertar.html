@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/css/all.min.css">
+    <link rel="stylesheet" href="css/estilosbase.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="menu_bar">
+            <i class="fas fa-bars"></i>
+            <a href="#" class="btn_menu">Menu</a>
+        </div>
+        <nav>
+            <span id="logo"> <img src="imagenes/sas3212321.png" width="100px"
+                 height="60px" alt="">
+            </span>
+            <ul>
+                <li><a href="conexion2.php"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="insertar.html"><i class="fas fa-briefcase"></i>Empleo</a></li>
+                <li class="submenu"><a href=""><i class="fas fa-project-diagram">
+                </i>Consultas</a>
+                    <ul class="children">
+                        <li><a href="busqueda.html">Buscar nombre</a></li>
+                        <li><a href="estados civiles.php">Mostrar estado civil</a></li>
+                        <li><a href="Busqueda 2.php">Buscar Genero</a></li>
+                    </ul>
+                </li>
+                <li><a href="editar.php"><i class="fab fa-servicestack"></i>Agregar</a></li>
+                <li><a href="Eliminar.php"><i class="fas fa-id-card"></i>Eliminar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Ingrese los siguientes datos a la base de datos</h1>
+    <form action="insert.php" method="post" enctype="multipart/form-data">
+        <p>Ingrese el nombre</p>
+        <input type="text" name="nombre">
+        <p>Ingrese el apellido</p>
+        <input type="text" name="apellido">
+        <p>Ingrese el Genero</p>
+        <input type="text" name="genero">
+        <p>Ingrese la experiencia</p>
+        <input type="text" name="estado">
+        <p>Ingrese la provincia</p>
+        <input type="text" name="foto">
+        <p>Ingrese la especialidad</p>
+        <input type="text" name="foto">
+        <p>Ingrese la fecha completa</p>
+        <input type="text" name="foto">
+        <p>Ingrese la foto</p>
+        <input type="file" name="foto">
+        <br>
+        <input type="submit" class="enviar" value="Enviar">
+    </form>

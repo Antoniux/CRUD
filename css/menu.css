@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fefefe;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+
+}
+header nav{
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0,0,0, .4);
+    padding: 2px;
+    box-shadow: #005 4px 3px 10px;
+}
+.menu_bar{
+    display: none;
+}
+header nav ul{
+    list-style: none;
+    margin-left: 400px;
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+header nav ul li a{
+    text-align: center;
+    color: #fefefe;
+    padding: 18px;
+    font-size: 22px;
+    display: block;
+    text-decoration: none;
+    margin-right: 15px;
+    transition-duration: 0.9s;
+    box-shadow: 0px 0px 1px rgba(0,0,0, .1);
+}
+i{
+    padding: 15px;
+    margin-right: 5px;
+}
+.children{
+    margin-left: 0;
+}
+header nav ul li a:hover{
+    box-shadow: 0px 0px 8px rgba(226,220,220, .8);
+}
+header img{
+    opacity: 0.8;
+    border-radius: 40px;
+}
+#logo{
+    padding: 15px;
+    position: absolute;
+}
+header nav ul li .children{
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0, .5);
+    
+}
+header nav ul li:hover .children{
+    display: block;
+}
+header nav ul li .children a{
+    text-align: left;
+    width: 100%;
+}
+section{
+    margin-top: 30px;
+    padding: 80px;
+}
+p{
+    margin-top: 30px;
+    font-size: 33px;
+}
+
+@media screen and (max-width:800px) {
+    header nav{
+        margin-top: 70px;
+        width: 70%;
+        height: 70%;
+        position: fixed;
+        left: -100%;
+    }
+    header nav ul{
+        margin-left: 5px;
+    }
+    #logo{
+        display: none;
+    }
+    header nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 2px solid rgba(255,255,255, .3);
+    }
+    header nav ul li a{
+        text-align: left;
+        width: 90%;
+    }
+    header nav ul li .children{
+        width: 90%;
+        position: relative;
+    }
+    .menu_bar{
+        display: block;
+        width: 100%;
+        color: #ff8;
+        position: fixed;
+        top: 0;
+    }
+    .menu_bar .btn_menu{
+        display: block;
+        padding: 20px;
+        background-color: rgba(0,0,0, .9);
+        color: #ff8;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .menu_bar i{
+        float: right;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+}
